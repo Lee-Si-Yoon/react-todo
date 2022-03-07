@@ -4,12 +4,6 @@ import { Categories, IToDo, toDoState } from "../atoms";
 
 function ToDo({ text, category, id }: IToDo) {
   const setToDos = useSetRecoilState(toDoState);
-  // selector for interface ITodo["category"]
-  /*
-   const onClick = (newCategory: IToDo["category"]) => {
-    console.log("goto" + newCategory);
-  };
-  */
   const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     const {
       currentTarget: { name },

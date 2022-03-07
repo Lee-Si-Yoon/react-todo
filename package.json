@@ -27,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predepoly": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +53,5 @@
     "@types/react-router-dom": "^5.3.0",
     "@types/styled-components": "^5.1.21"
   },
-  "homepage": "https://Lee-Si-Yoon.github.io/"
+  "homepage": "https://Lee-Si-Yoon.github.io/react-todo"
 }
