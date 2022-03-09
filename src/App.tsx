@@ -56,9 +56,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size : 15px;
-    line-height: 1.5;
-    letter-spacing : -0.022em;
+    background-color: #34495e;
   }
   a {
     text-decoration:none;

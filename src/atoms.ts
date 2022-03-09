@@ -12,23 +12,26 @@ if (localData === null) {
 
 // useable interface Enumerable
 // Enum is actually a list of numbers, which helps us to write in string
+// you can't add things to add
+/*
 export enum Categories {
   // "TO_DO" was actually 0
   "TO_DO" = "TO_DO",
   "DOING" = "DOING",
   "DONE" = "DONE",
 }
+*/
 
 export interface IToDo {
   // interface fot toDoState, if null toDos will only return emty array
   text: string;
   id: number;
-  category: Categories;
+  category: string;
 }
 
-export const categoryState = atom<Categories>({
+export const categoryState = atom<string>({
   key: "catgory",
-  default: Categories.TO_DO,
+  default: "TO_DO",
 });
 
 export const toDoState = atom<IToDo[]>({
