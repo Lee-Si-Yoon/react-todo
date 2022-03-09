@@ -9,9 +9,6 @@ import styled from "styled-components";
 const ToDosWarpper = styled.ul`
   max-width: 470px;
   margin: 20px auto 0 auto;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
 `;
 
 const CategoryForm = styled.form`
